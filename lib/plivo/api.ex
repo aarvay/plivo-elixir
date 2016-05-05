@@ -7,8 +7,7 @@ defmodule Plivo.API do
   def call(method, endpoint \\ "/", body \\ "") do
     __MODULE__.request!(method, endpoint, body,
       ["User-Agent": "ElixirPlivo", "Content-Type": "application/json"],
-      [hackney: [basic_auth: {auth_id, auth_token}]]
-    )
+      [hackney: [basic_auth: {auth_id, auth_token}]])
   end
 
   defp process_url(url) do

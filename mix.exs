@@ -18,7 +18,7 @@ defmodule Plivo.Mixfile do
 
   defp deps do
     [{:httpoison, "~> 0.8.0"},
-     {:poison, "~> 2.1.0"}]
+     {:poison, "~> 2.0.0"}]
   end
 
   defp description do
